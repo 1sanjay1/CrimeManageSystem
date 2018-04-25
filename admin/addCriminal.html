@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Criminal Details</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	
+	<!-- Custom Css -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	
+</head>
+<body>
+
+	<!-- Navigation Bar -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Logo -->
+            <div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar" >
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+                <a href="#" class="navbar-brand">CRIME CONTROL</a>
+            </div>
+
+            <!-- Menu Items -->
+            <div class="collapse navbar-collapse" id="mainNavBar">
+                <ul class="nav navbar-nav">
+                    <li ><a href="home.html">Admin Home</a></li>
+                    <li ><a href="about.html" >Complaint Status</a></li>
+                    <li ><a href="contact.html">Crime Status</a></li>
+					<li ><a href="#">View Contacts</a></li>
+					<li> <a href="#">Message </a></li>
+                    <li class="dropdown">
+                        <a href="../index.html">&larr; back to Main Page</a>
+                    </li>
+                </ul>
+
+                <!--right align -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+							<li><a href="login/loginModal.html">Profile</a></li>
+                            <li><a href="login/loginModal.html">Settings</a></li>
+                            <li><a href="login/loginModal.html">Log Out</a></li>
+                        </ul>	
+					</li>
+                </ul>
+				
+				
+            </div>
+
+        </div>
+    </nav>
+
+	<!-- Main content --	
+	<div class="container">
+		<img src="../images/1.jpg" class="img-responsive" width=100% height=100px;/>
+	</div>
+-->
+	<div class="container">
+		<div class="well text-muted" id="welcome">Admin Account</div>
+	</div>
+
+	
+
+	<!-- Main Content -->
+	<div class="container">
+		<div class="row" style="background-color:#dff0d8;margin:0px;">
+			<div class="col-md-8" id = "leftside">
+				<!-- Form ----------------------->
+				<div id="signupbox" style=" margin-top:20px; margin-left:0px; color:#d9534f;" class="mainbox col-md-10 col-md-offset-3 col-sm-8 col-sm-offset-2">
+					<div class="panel panel-info">
+				
+						 
+						<div class="panel-heading">
+							<div class="panel-title">New Criminal Form</div>
+						</div> 
+						
+						<div class="panel-body" >
+							<form id="signupform" class="form-horizontal" role="form">
+								<div id="signupalert" style="display:none" class="alert alert-danger">
+									<p>Error:</p>
+									<span></span>
+								</div>
+             
+								<div class="form-group">
+									<label for="email" class="col-md-3 control-label">First Name</label>
+									<div class="col-md-9">
+										<input type="text" class="form-control" name="firstname" placeholder="First Name">
+									</div>
+								</div>
+                                    
+								<div class="form-group">
+									<label for="lastname" class="col-md-3 control-label">Last Name</label>
+									<div class="col-md-9">
+										<input type="text" class="form-control" name="lastname" placeholder="Last Name">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="address" class="col-md-3 control-label">Address</label>
+									<div class="col-md-9">
+										<input type="text" class="form-control" name="address" placeholder="Address">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="age" class="col-md-3 control-label">Age</label>
+									<div class="col-md-9">
+										<input type="text" class="form-control" name="age" placeholder="Age">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="text" class="col-md-3 control-label">Type of Crime</label>
+									<div class="col-md-9">
+										<input type="text" class="form-control" name="toc" placeholder="type of crime">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="date" class="col-md-3 control-label">Date of crime</label>
+									<div class="col-md-9">
+										<input type="text" class="form-control" name="doc" placeholder="year-month-day">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="date" class="col-md-3 control-label">Date of Entry</label>
+									<div class="col-md-9">
+										<input type="text" class="form-control" name="doe" placeholder="year-month-day">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="date" class="col-md-3 control-label">Date of Leaving</label>
+									<div class="col-md-9">
+										<input type="text" class="form-control" name="dol" placeholder="year-month-day">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="text" class="col-md-3 control-label">complexion</label>
+									<div class="col-md-9">
+										<input type="text" class="form-control" name="complexion" placeholder="comlexion">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="text" class="col-md-3 control-label">Description of case</label>
+									<div class="col-md-9">
+										<input type="text" class="form-control" name="des_of_case" placeholder="Enter here....">
+									</div>
+								</div>
+								
+								<div class="form-group">
+									<!-- Button -->                                        
+									<div class="col-md-offset-3 col-md-9">
+										<button id="btn-signup" type="button" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Submit</button>
+									
+										<button id="btn-signup" type="reset" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp reset</button>
+									</div>
+								</div>				                                                     	    
+							</form>
+				 		</div>
+					</div>                                             
+				</div> 
+	
+		<!-- ```````````````````````````````````````````````````Ending of Signup Box````````````````````````````````````````````````````-->
+				
+			</div>
+			
+			
+			<div class="col-md-4" >
+				<ul class="usercontent">
+					<li><h4>New Additions</h4>
+						<ul type="square">
+							<li><a href="addCriminal.html">Add Criminal</a></li>
+							<li><a href="deleteCriminal.html">Delete Criminal</a></li>
+							<li><a href="complaint.html">Complaint</a></li>
+							<li><a href="crimereport.html">Crime Report</a></li>
+							<li><a href="missingperson.html">Missing Person</a></li>
+							<li><a href="viewmissingperson.html">View Missing Person</a></li>
+							<li><a href="mostwantedperson.html">View Mostwanted Person</a></li>
+						</ul>
+					</li>
+					
+					<li><h4>Account Settings</h4>
+						<ul type="square">
+							<li><a href="#">Change Password</a></li>
+							<li><a href="#">Edit Complaint</a></li>
+							<li><a href="#">Edit Complaint</a></li>
+							<li><a href="#">Edit Account</a></li>
+						</ul>
+					</li>
+					<li><h4>More Facility</h4>
+						<ul type="square">
+							<li><a href="#">Chat</a></li>
+							<li><a href="#">Mail</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container" heigh=150 widht=100%> </div>
+	<nav class="navbar navbar-fixed navbar-bottom" id="footer" ></nav>
+	
+</body>
+</html>
